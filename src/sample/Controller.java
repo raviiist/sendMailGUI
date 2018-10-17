@@ -81,7 +81,7 @@ public class Controller implements Initializable {
         //making smtp configuration...
         String host="smtp.gmail.com";
         final String user="experimentxcosmo@gmail.com";//change accordingly
-        final String password="181229@Exp";//change accordingly
+        final String password="xxxxxxxx";//change accordingly
 
         String to="ravi.kumar@istrac.org";//change accordingly
 
