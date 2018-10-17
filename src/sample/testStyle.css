@@ -1,0 +1,105 @@
+.root {
+    /*-fx-background-image: url("background.jpg"); */
+	/*-fx-background-color: #00223b; */
+	-fx-background-color: #0f1a21;
+}
+/* https://icons8.com/icon/set/pokemon/all                          for icons */
+.button {
+    /*-fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );*/
+    /* ================ Now Another Style ============*/
+    -fx-effect: dropshadow(two-pass-box , darkgray, 10, 0.0 , 4, 5);
+    /*-fx-background-color: rgba(205,205,205,0.7); */
+    /*-fx-background-color: linear-gradient(#74787c, #ebf6ff); */
+    -fx-background-color: linear-gradient(#9ca1a4, #ebf6ff);
+    -fx-background-radius: 15 15 15 15;
+    -fx-background-insets: 2 2 2 2 ;
+}
+/*.menu-button {
+    -fx-effect: dropshadow(two-pass-box , darkgray, 10, 0.0 , 4, 5);
+    -fx-background-color: linear-gradient(#9ca1a4, #ebf6ff);
+    -fx-background-radius: 15 15 15 15;
+    -fx-background-insets: 2 2 2 2 ;
+} */
+/*.check-box {
+    -fx-effect: dropshadow(two-pass-box , darkgray, 10, 0.0 , 4, 5);
+    -fx-background-color: linear-gradient(#9ca1a4, #ebf6ff);
+    -fx-background-radius: 15 15 15 15;
+    -fx-background-insets: 2 2 2 2 ;
+} */
+.combo-box {
+    -fx-effect: dropshadow(two-pass-box , darkgray, 10, 0.0 , 4, 5);
+    -fx-background-color: linear-gradient(#9ca1a4, #ebf6ff);
+    -fx-background-radius: 15 15 15 15;
+    -fx-background-insets: 2 2 2 2 ;
+    -fx-font-family: Gill-Sans-MT;
+    -fx-font-size: 16px;
+    -fx-text-fill: #0462ae;
+}
+/*.button:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}*/
+.button:pressed{
+	-fx-background-color: rgba(180,180,180,0.55); 
+
+}
+
+.button:hover{
+    /*-fx-background-color: rgba(235,235,235,0.5); */
+    -fx-background-color: linear-gradient(#ebf6ff, #9ca1a4);
+    /*-fx-background-color: rgba(180,180,180,0.55); */
+}
+
+
+/*
+.button:focused{
+    -fx-background-color: rgba(205,205,205,0.3);
+
+} */
+
+
+/*.label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+.UT-label {
+    -fx-font-size: 36px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #818181;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}*/
+
+
+/*
+.dialog > .dialog-pane {
+    -fx-background-color: greenyellow;
+}
+
+.dialog > .dialog-pane > .button-bar {
+    -fx-font-size: 24px;
+    -fx-background-color: indianred;
+    -fx-font-family: "Andalus";
+}
+
+.dialog > .dialog-pane > .content.label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold; 
+    -fx-fill: blue;
+}
+
+.dialog:header > .dialog-pane .header-panel {
+    -fx-background-color: cadetblue;
+    -fx-font-style: italic;
+}
+
+.alert.confirmation.dialog-pane {
+    -fx-graphic: url("lock24.png");
+}	*/
+
+
