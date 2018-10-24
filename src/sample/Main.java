@@ -14,9 +14,14 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Send Mail");
-        primaryStage.setScene(new Scene(root));
+        //primaryStage.setScene(new Scene(root));
 
-        primaryStage.initStyle(StageStyle.UNDECORATED);
+        final Scene scene = new Scene(root);
+        scene.setFill(null);
+        primaryStage.setScene(scene);
+        primaryStage.initStyle(StageStyle.TRANSPARENT);
+
+        //primaryStage.initStyle(StageStyle.UNDECORATED);
         root.setOnMousePressed(event -> {
             x = event.getSceneX();
             y = event.getSceneY();
@@ -25,6 +30,9 @@ public class Main extends Application {
             primaryStage.setX(event.getScreenX() -x);
             primaryStage.setY(event.getScreenY() -y);
         });
+        /*root.setOnMouseClicked(event -> {
+            primaryStage
+        });*/
         primaryStage.show();
     }
 

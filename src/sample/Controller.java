@@ -4,10 +4,8 @@ package sample;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.Hyperlink;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
 import javax.activation.DataHandler;
@@ -43,6 +41,8 @@ public class Controller implements Initializable {
     @FXML
     private Hyperlink closeLink;
     @FXML
+    private PasswordField passwd;
+    @FXML
     void systemClose(ActionEvent event) {
         System.exit(0);
     }
@@ -52,7 +52,11 @@ public class Controller implements Initializable {
         sentLabel.setVisible(false);
         failedLabel.setVisible(false);
     }
-
+    @FXML
+    void freshInputs(MouseEvent event) {
+        sentLabel.setVisible(false);
+        failedLabel.setVisible(false);
+    }
     @FXML
     void clickSend(ActionEvent event) {
 
@@ -81,8 +85,8 @@ public class Controller implements Initializable {
         //making smtp configuration...
         String host="smtp.gmail.com";
         final String user="experimentxcosmo@gmail.com";//change accordingly
-        final String password="xxxxxxxx";//change accordingly
-
+        //final String password="*********";//change accordingly
+        final String password=passwd.getText();     //change accordingly
         String to="ravi.kumar@istrac.org";//change accordingly
 
         //Get the session object
@@ -130,11 +134,14 @@ public class Controller implements Initializable {
             if (true) {
                 System.out.println("message sent successfully...");
                 sentLabel.setVisible(true);
+                failedLabel.setVisible(false);
             }else {
                 failedLabel.setVisible(true);
+                sentLabel.setVisible(false);
             }
         } catch (MessagingException e) {e.printStackTrace();
         failedLabel.setVisible(true);
+        sentLabel.setVisible(false);
         }
 
     }
