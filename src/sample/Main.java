@@ -16,7 +16,7 @@ public class Main extends Application {
         primaryStage.setTitle("Send Mail");
         //primaryStage.setScene(new Scene(root));
 
-        final Scene scene = new Scene(root);
+        Scene scene = new Scene(root);
         scene.setFill(null);
         primaryStage.setScene(scene);
         primaryStage.initStyle(StageStyle.TRANSPARENT);
@@ -41,3 +41,8 @@ public class Main extends Application {
         launch(args);
     }
 }
+
+/*   To create a Shortcut in linux(ubuntu)
+     sudo apt-get install --no-install-recommends gnome-panel
+     gnome-desktop-item-edit ~/Desktop/ --create-new
+*/

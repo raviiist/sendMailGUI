@@ -57,6 +57,7 @@ public class Controller implements Initializable {
         sentLabel.setVisible(false);
         failedLabel.setVisible(false);
     }
+
     @FXML
     void clickSend(ActionEvent event) {
 
@@ -84,9 +85,9 @@ public class Controller implements Initializable {
 
         //making smtp configuration...
         String host="smtp.gmail.com";
-        final String user="experimentxcosmo@gmail.com";//change accordingly
+        String user="experimentxcosmo@gmail.com";//change accordingly
         //final String password="*********";//change accordingly
-        final String password=passwd.getText();     //change accordingly
+        String password=passwd.getText();     //change accordingly
         String to="ravi.kumar@istrac.org";//change accordingly
 
         //Get the session object
